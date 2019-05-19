@@ -16,7 +16,7 @@ describe('requireEnv', () => {
     it('throws an error when an environment variable is not set', () => {
       expect(() => {
         requireEnv('TEST_VARIABLE');
-      }).toThrow(new Error('Required environment variable [TEST_VARIABLE] is not set'));
+      }).toThrow(new Error('Required environment variable [TEST_VARIABLE] is not set!'));
     });
   });
 
@@ -37,7 +37,7 @@ describe('requireEnv', () => {
         requireEnv(['TEST_VARIABLE', 'BACKUP_VARIABLE', 'ANOTHER_ONE']);
       }).toThrow(
         new Error(
-          'Required environment variable [TEST_VARIABLE or BACKUP_VARIABLE or ANOTHER_ONE] is not set'
+          'Required environment variable [TEST_VARIABLE or BACKUP_VARIABLE or ANOTHER_ONE] is not set!'
         )
       );
     });

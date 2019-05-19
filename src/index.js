@@ -5,5 +5,5 @@ export default function requireEnv(key, fallback) {
   if (validKey) return process.env[validKey];
   if (fallback) return fallback;
 
-  throw new Error(`Required environment variable [${keys.join(' or ')}] is not set`);
+  throw new Error(`Required environment variable [${keys.join(' or ')}] is not set!`);
 }
