@@ -1,4 +1,4 @@
-export default function requireEnv(key, fallback) {
+export default function envRequire(key, fallback) {
   const keys = Array.isArray(key) ? key : [key];
   const validKey = keys.find(key => process.env[key]);
 

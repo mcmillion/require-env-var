@@ -1,5 +1,5 @@
 {
-  "name": "require-env",
+  "name": "env-require",
   "version": "0.1.0",
   "description": "Easily require environment variables or else",
   "keywords": [
@@ -9,13 +9,13 @@
     "envvars",
     "require"
   ],
-  "homepage": "https://github.com/mcmillion/require-env",
-  "bugs": "https://github.com/mcmillion/require-env",
+  "homepage": "https://github.com/mcmillion/env-require",
+  "bugs": "https://github.com/mcmillion/env-require",
   "files": [
     "/lib"
   ],
   "main": "./lib/index.js",
-  "repository": "https://github.com/mcmillion/require-env.git",
+  "repository": "https://github.com/mcmillion/env-require.git",
   "author": "Matthew McMillion <matthew@mcmillion.io>",
   "license": "MIT",
   "private": false,
