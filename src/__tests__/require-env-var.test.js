@@ -32,7 +32,7 @@ describe('requireEnvVar', () => {
       expect(requireEnvVar(['TEST_VARIABLE', 'BACKUP_VARIABLE'])).toEqual('backup');
     });
 
-    it('throws an error when backup environment variable is not set', async () => {
+    it('throws an error when backup environment variable is not set', () => {
       expect(() => {
         requireEnvVar(['TEST_VARIABLE', 'BACKUP_VARIABLE', 'ANOTHER_ONE']);
       }).toThrow(
