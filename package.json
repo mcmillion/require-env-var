@@ -9,7 +9,7 @@
     "envvars",
     "require"
   ],
-  "homepage": "git@github.com:mcmillion/require-env-var",
+  "homepage": "https://github.com/mcmillion/require-env-var",
   "bugs": "https://github.com/mcmillion/require-env-var/issues",
   "files": [
     "/lib"
