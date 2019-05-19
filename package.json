@@ -1,0 +1,51 @@
+{
+  "name": "require-env",
+  "version": "0.1.0",
+  "description": "Easily require environment variables or else",
+  "keywords": [
+    "env",
+    "dotenv",
+    "vars",
+    "envvars",
+    "require"
+  ],
+  "homepage": "https://github.com/mcmillion/require-env",
+  "bugs": "https://github.com/mcmillion/require-env",
+  "files": [
+    "/lib"
+  ],
+  "main": "./lib/index.js",
+  "repository": "https://github.com/mcmillion/require-env.git",
+  "author": "Matthew McMillion <matthew@mcmillion.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "cross-env BABEL_ENV=development babel src --watch --out-dir lib",
+    "lint": "eslint src",
+    "test": "jest",
+    "clean": "rimraf lib",
+    "build": "cross-env BABEL_ENV=production babel src --ignore '**/__tests__/**' --out-dir lib",
+    "prepublish": "$npm_execpath run clean && $npm_execpath run lint && $npm_execpath run test && $npm_execpath run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-minify": "^0.5.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.7",
+    "rimraf": "^2.6.3"
+  }
+}

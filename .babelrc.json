@@ -1,0 +1,30 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "6"
+            }
+          }
+        ]
+      ],
+      "plugins": ["add-module-exports"]
+    },
+    "production": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "6"
+            }
+          }
+        ]
+      ],
+      "plugins": ["add-module-exports"]
+    }
+  }
+}
